@@ -13,6 +13,12 @@
 		39C80978280023BB00090ABF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39C80976280023BB00090ABF /* Main.storyboard */; };
 		39C8097A280023BC00090ABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39C80979280023BC00090ABF /* Assets.xcassets */; };
 		39C8097D280023BC00090ABF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39C8097B280023BC00090ABF /* LaunchScreen.storyboard */; };
+		39C809BB2800358500090ABF /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C809BA2800358500090ABF /* AboutViewController.swift */; };
+		39C809BD2800359300090ABF /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C809BC2800359300090ABF /* SessionViewController.swift */; };
+		39C809BF2800359C00090ABF /* StageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C809BE2800359C00090ABF /* StageViewController.swift */; };
+		39C809C1280035A200090ABF /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C809C0280035A200090ABF /* PlayViewController.swift */; };
+		39C809C3280035C700090ABF /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C809C2280035C700090ABF /* ChallengeViewController.swift */; };
+		39C809C5280035CE00090ABF /* ChallengeResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C809C4280035CE00090ABF /* ChallengeResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		39C80979280023BC00090ABF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39C8097C280023BC00090ABF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39C8097E280023BC00090ABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39C809BA2800358500090ABF /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		39C809BC2800359300090ABF /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		39C809BE2800359C00090ABF /* StageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageViewController.swift; sourceTree = "<group>"; };
+		39C809C0280035A200090ABF /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		39C809C2280035C700090ABF /* ChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
+		39C809C4280035CE00090ABF /* ChallengeResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,12 @@
 				39C80970280023BB00090ABF /* AppDelegate.swift */,
 				39C80972280023BB00090ABF /* SceneDelegate.swift */,
 				39C80974280023BB00090ABF /* ViewController.swift */,
+				39C809BA2800358500090ABF /* AboutViewController.swift */,
+				39C809BC2800359300090ABF /* SessionViewController.swift */,
+				39C809BE2800359C00090ABF /* StageViewController.swift */,
+				39C809C0280035A200090ABF /* PlayViewController.swift */,
+				39C809C2280035C700090ABF /* ChallengeViewController.swift */,
+				39C809C4280035CE00090ABF /* ChallengeResultViewController.swift */,
 				39C80976280023BB00090ABF /* Main.storyboard */,
 				39C80979280023BC00090ABF /* Assets.xcassets */,
 				39C8097B280023BC00090ABF /* LaunchScreen.storyboard */,
@@ -140,7 +158,13 @@
 			files = (
 				39C80975280023BB00090ABF /* ViewController.swift in Sources */,
 				39C80971280023BB00090ABF /* AppDelegate.swift in Sources */,
+				39C809C3280035C700090ABF /* ChallengeViewController.swift in Sources */,
+				39C809BB2800358500090ABF /* AboutViewController.swift in Sources */,
+				39C809BF2800359C00090ABF /* StageViewController.swift in Sources */,
+				39C809BD2800359300090ABF /* SessionViewController.swift in Sources */,
+				39C809C1280035A200090ABF /* PlayViewController.swift in Sources */,
 				39C80973280023BB00090ABF /* SceneDelegate.swift in Sources */,
+				39C809C5280035CE00090ABF /* ChallengeResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
