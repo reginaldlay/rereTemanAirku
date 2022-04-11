@@ -1,2 +1,7 @@
+# Xcode Files
 .xcuserdatad
 .xcodeproj/project.xcworkspace/xcuserdata/
+
+# macOS Files
+.DS_Store
+
