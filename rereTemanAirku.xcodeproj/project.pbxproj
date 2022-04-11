@@ -19,6 +19,7 @@
 		39C809C1280035A200090ABF /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C809C0280035A200090ABF /* PlayViewController.swift */; };
 		39C809C3280035C700090ABF /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C809C2280035C700090ABF /* ChallengeViewController.swift */; };
 		39C809C5280035CE00090ABF /* ChallengeResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C809C4280035CE00090ABF /* ChallengeResultViewController.swift */; };
+		39DC7A0F2804394C00F0EE3F /* ChooseStageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DC7A0E2804394C00F0EE3F /* ChooseStageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		39C809C0280035A200090ABF /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		39C809C2280035C700090ABF /* ChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
 		39C809C4280035CE00090ABF /* ChallengeResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeResultViewController.swift; sourceTree = "<group>"; };
+		39DC7A0E2804394C00F0EE3F /* ChooseStageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseStageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				39C80974280023BB00090ABF /* ViewController.swift */,
 				39C809BA2800358500090ABF /* AboutViewController.swift */,
 				39C809BC2800359300090ABF /* SessionViewController.swift */,
+				39DC7A0E2804394C00F0EE3F /* ChooseStageViewController.swift */,
 				39C809BE2800359C00090ABF /* StageViewController.swift */,
 				39C809C0280035A200090ABF /* PlayViewController.swift */,
 				39C809C2280035C700090ABF /* ChallengeViewController.swift */,
@@ -160,6 +163,7 @@
 				39C80971280023BB00090ABF /* AppDelegate.swift in Sources */,
 				39C809C3280035C700090ABF /* ChallengeViewController.swift in Sources */,
 				39C809BB2800358500090ABF /* AboutViewController.swift in Sources */,
+				39DC7A0F2804394C00F0EE3F /* ChooseStageViewController.swift in Sources */,
 				39C809BF2800359C00090ABF /* StageViewController.swift in Sources */,
 				39C809BD2800359300090ABF /* SessionViewController.swift in Sources */,
 				39C809C1280035A200090ABF /* PlayViewController.swift in Sources */,
