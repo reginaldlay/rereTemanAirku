@@ -26,9 +26,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="questionmark.circle.fill" catalog="system"/>
-                                <connections>
-                                    <segue destination="vqF-r2-8PT" kind="presentation" modalPresentationStyle="fullScreen" id="YiU-Mn-SHB"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kQx-nq-NS7">
                                 <rect key="frame" x="-145" y="269" width="355" height="355"/>
@@ -47,9 +44,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="MULAI"/>
-                                <connections>
-                                    <segue destination="FnQ-hu-S00" kind="presentation" modalPresentationStyle="fullScreen" id="2A1-1A-mfx"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="87w-Ng-h7b">
                                 <rect key="frame" x="767" y="298" width="95" height="95"/>
@@ -81,9 +75,6 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="xmark.circle" catalog="system"/>
-                                        <connections>
-                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="pwI-5k-pBi"/>
-                                        </connections>
                                     </button>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5oA-i0-QRR">
                                         <rect key="frame" x="11" y="47" width="803" height="242"/>
@@ -154,9 +145,6 @@
                                 <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="ia9-uF-drM"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHe-cs-tga">
                                 <rect key="frame" x="60" y="191" width="50" height="38"/>
@@ -239,9 +227,6 @@
             <point key="canvasLocation" x="45" y="3876"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="ia9-uF-drM"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowtriangle.left.fill" catalog="system" width="128" height="113"/>
         <image name="arrowtriangle.right.fill" catalog="system" width="128" height="113"/>
