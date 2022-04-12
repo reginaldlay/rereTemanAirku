@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39396FD6280589B800232167 /* SessionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39396FD5280589B800232167 /* SessionDetailViewController.swift */; };
 		39C80971280023BB00090ABF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C80970280023BB00090ABF /* AppDelegate.swift */; };
 		39C80973280023BB00090ABF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C80972280023BB00090ABF /* SceneDelegate.swift */; };
 		39C80975280023BB00090ABF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C80974280023BB00090ABF /* ViewController.swift */; };
@@ -68,6 +69,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39396FD5280589B800232167 /* SessionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDetailViewController.swift; sourceTree = "<group>"; };
 		39C8096D280023BB00090ABF /* rereTemanAirku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rereTemanAirku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39C80970280023BB00090ABF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39C80972280023BB00090ABF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				39C80974280023BB00090ABF /* ViewController.swift */,
 				39C809BA2800358500090ABF /* AboutViewController.swift */,
 				39C809BC2800359300090ABF /* SessionViewController.swift */,
+				39396FD5280589B800232167 /* SessionDetailViewController.swift */,
 				39DC7A0E2804394C00F0EE3F /* ChooseStageViewController.swift */,
 				39C809BE2800359C00090ABF /* StageViewController.swift */,
 				39C809C0280035A200090ABF /* PlayViewController.swift */,
@@ -348,6 +351,7 @@
 				39C80975280023BB00090ABF /* ViewController.swift in Sources */,
 				39C80971280023BB00090ABF /* AppDelegate.swift in Sources */,
 				39C809C3280035C700090ABF /* ChallengeViewController.swift in Sources */,
+				39396FD6280589B800232167 /* SessionDetailViewController.swift in Sources */,
 				9587C6C92804818200C72733 /* Prompt.swift in Sources */,
 				39C809BB2800358500090ABF /* AboutViewController.swift in Sources */,
 				39DC7A0F2804394C00F0EE3F /* ChooseStageViewController.swift in Sources */,
