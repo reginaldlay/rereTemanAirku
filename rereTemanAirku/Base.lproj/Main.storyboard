@@ -11,6 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="rereTemanAirku" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
@@ -19,8 +20,39 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cnX-aO-cva">
                                 <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94901961089999998" green="0.9098039269" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo rere" translatesAutoresizingMaskIntoConstraints="NO" id="sqs-w9-UaH">
+                                        <rect key="frame" x="375" y="60" width="325.33333333333331" height="235"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mascot rere" translatesAutoresizingMaskIntoConstraints="NO" id="mZn-3G-WU4">
+                                        <rect key="frame" x="223" y="70" width="167.33333333333331" height="225"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lifebuoy landing" translatesAutoresizingMaskIntoConstraints="NO" id="EFm-KW-2iW">
+                                        <rect key="frame" x="-52" y="298" width="318" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="duck - landing" translatesAutoresizingMaskIntoConstraints="NO" id="gfh-ET-k0k">
+                                        <rect key="frame" x="724" y="250" width="119.66666666666666" height="119.33333333333333"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSy-wT-klx">
+                                        <rect key="frame" x="817" y="20" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="about button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPc-Te-DBJ">
+                                        <rect key="frame" x="377" y="319" width="173" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="button mulai landing"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxN-uJ-5HS">
                                 <rect key="frame" x="818" y="20" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -52,12 +84,12 @@
                                 <rect key="frame" x="767" y="298" width="95" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="29.805615550755942" y="65.887850467289709"/>
         </scene>
@@ -68,13 +100,77 @@
                     <view key="view" contentMode="scaleToFill" id="hWu-qI-vrl">
                         <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lifebuoy mirror" translatesAutoresizingMaskIntoConstraints="NO" id="tzY-JB-8xn">
+                                <rect key="frame" x="764" y="-12" width="162" height="198"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqe-7R-Kt8">
+                                <rect key="frame" x="60" y="20" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Bitmap back"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Title - pilih sesi" translatesAutoresizingMaskIntoConstraints="NO" id="Goc-u2-ibE">
+                                <rect key="frame" x="103" y="-24" width="763" height="141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhK-zj-8ev">
+                                <rect key="frame" x="267" y="107" width="434" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="sesi 1 button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqi-IV-jcf">
+                                <rect key="frame" x="277" y="182" width="414" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="lock session 2"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFO-6Z-UoY">
+                                <rect key="frame" x="277" y="249" width="414" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="lock session 3"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2a6-gT-QfH">
+                                <rect key="frame" x="277" y="316" width="414" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="lock session 4"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMi-LG-MyT">
+                                <rect key="frame" x="692" y="124" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="detail enable"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKt-nH-ID1">
+                                <rect key="frame" x="692" y="189" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="detail disable"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOu-5G-ciR">
+                                <rect key="frame" x="692" y="256" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="detail disable"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghQ-bv-eNj">
+                                <rect key="frame" x="692" y="323" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="detail disable"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gim-0p-RtL"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2JE-uY-NoP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="821"/>
+            <point key="canvasLocation" x="29.805615550755942" y="820.09345794392516"/>
         </scene>
         <!--Choose Stage View Controller-->
         <scene sceneID="5Zr-Ee-11e">
@@ -83,13 +179,47 @@
                     <view key="view" contentMode="scaleToFill" id="gMR-ST-DXT">
                         <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lifebuoy mirror" translatesAutoresizingMaskIntoConstraints="NO" id="dYF-hh-GNQ">
+                                <rect key="frame" x="657" y="0.0" width="366" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Title choose stage" translatesAutoresizingMaskIntoConstraints="NO" id="vpG-OF-DwO">
+                                <rect key="frame" x="111" y="-145" width="759" height="408"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtn-a8-oMU">
+                                <rect key="frame" x="60" y="33" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Bitmap back"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Orl-nq-k8W">
+                                <rect key="frame" x="130" y="105" width="217" height="302"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="unlock Session"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnn-5Z-dZ3">
+                                <rect key="frame" x="356" y="105" width="216" height="302"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="unlock challenge"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsE-PB-YPe">
+                                <rect key="frame" x="591" y="115" width="197" height="282"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="lock session"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="nrr-PB-DZt"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.94509803921568625" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFz-49-kSP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="27" y="1594"/>
+            <point key="canvasLocation" x="26.565874730021601" y="1593.9252336448596"/>
         </scene>
         <!--Stage View Controller-->
         <scene sceneID="3VV-ms-Avl">
@@ -99,69 +229,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g8h-2A-DW2">
-                                <rect key="frame" x="118" y="86" width="412" height="261"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nrm-1G-OCh">
-                                        <rect key="frame" x="-10" y="-64" width="240" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4l6-GY-1Qy">
-                                <rect key="frame" x="60" y="20" width="55" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHe-cs-tga">
-                                <rect key="frame" x="60" y="191" width="50" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrowtriangle.left.fill" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="15"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twd-lR-06U">
-                                <rect key="frame" x="816" y="190" width="50" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrowtriangle.right.fill" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="15"/>
-                                </buttonConfiguration>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RwO-oA-6mf">
-                                <rect key="frame" x="548" y="86" width="267" height="166"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg anak renang" translatesAutoresizingMaskIntoConstraints="NO" id="8fy-4D-RLL">
+                                <rect key="frame" x="548" y="102" width="307" height="174"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7E-N3-WRq">
-                                <rect key="frame" x="547" y="291" width="268" height="56"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lifebuoy mirror" translatesAutoresizingMaskIntoConstraints="NO" id="eEa-ge-dN2">
+                                <rect key="frame" x="734" y="0.0" width="304" height="174"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPr-B6-ccy">
+                                <rect key="frame" x="60" y="33" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="MULAI"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Bitmap back"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Container stage view" translatesAutoresizingMaskIntoConstraints="NO" id="fBV-gk-ZwI">
+                                <rect key="frame" x="110" y="102" width="412" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAL-qy-6fT">
+                                <rect key="frame" x="548" y="328" width="318" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+
+                                <buttonConfiguration key="configuration" style="plain" image="Button mulaipng"/>
                                 <connections>
                                     <segue destination="efP-bM-Uf6" kind="show" id="VdN-Vd-16e"/>
                                 </connections>
+
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UgA-Np-WZj">
-                                <rect key="frame" x="118" y="20" width="697" height="47"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water-lily" translatesAutoresizingMaskIntoConstraints="NO" id="q0h-lY-amU">
+                                <rect key="frame" x="530" y="255" width="47" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray3Color"/>
-                            </view>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Title stage" translatesAutoresizingMaskIntoConstraints="NO" id="0r8-wG-FJT">
+                                <rect key="frame" x="107" y="21" width="759" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VwD-JH-tLQ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="6DO-nx-OC8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCZ-Wt-p6w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="2365"/>
+            <point key="canvasLocation" x="29.805615550755942" y="2364.9532710280373"/>
         </scene>
         <!--Play View Controller-->
         <scene sceneID="kvP-cH-fxL">
@@ -305,69 +418,102 @@
                         <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GQu-qc-CbZ">
-                                <rect key="frame" x="49" y="62" width="829" height="306"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lifebuoy" translatesAutoresizingMaskIntoConstraints="NO" id="0XT-zU-Kxg">
+                                <rect key="frame" x="-157" y="-10" width="487" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zfj-eW-cw2">
-                                        <rect key="frame" x="768" y="8" width="46" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" image="xmark.circle" catalog="system"/>
-                                    </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TENTANG" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lK8-Kg-WJN">
-                                        <rect key="frame" x="18" y="-18" width="149" height="42"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dB-6w-hJR">
-                                        <rect key="frame" x="16" y="47" width="796" height="227"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                        <string key="text">Petunjuk bermain
-Di Sesi
-Siapkan alat-alat penunjang role play yang tertera pada halaman stage
-Siapkan waktu ayah bunda berdasarkan aktivitas yang akan dilakukan pada halaman stage
-Jika perlu melakukan screen mirroring HP ke TV atau menggunakan iPad untuk ukuran yang lebih besar
-Mengikuti arahan Rere, lalu mengarahkan anak dengan memperagakan terlebih dahulu dengan antusias lalu kemudian anak mengikuti
-Tekan layar HP untuk melanjutkan aktivitas
-Sesi tidak dibatasi waktu, sehingga ulangilah sampai anak terbiasa setidaknya 3 kali
-Tekan Selesai ketika sudah selesai ya
-Ujilah pemahaman anak dengan skenario di luar sesi seperti, “Bagaimana jika kamu melihat mainanmu mengapung di pinggir kolam dan tidak ada orang dewasa di sekitar kolam renang?” dan harapkan jawabannya menunjukkan pemahaman terhadap pembelajaran.
-Di Kuis
-Bersama anak masing-masing memilih jawaban yang benar dari kedua ilustrasi
-Orang tua lebih dahulu memilih lalu dilanjutkan oleh anak
-Sebaiknya untuk menguji pemahaman, orang tua memilih terlebih dahulu jawaban yang salah, untuk melihat apakah anak akan memilih yang salah atau justru yang benar
-Jika skor kurang dari 3, silahkan mengulangi sesi role playnya
-Bagaimana agar lebih terlibat dalam role play anak?
-Ikut berimajinasilah
-Berlatih pada waktu netral dan tenang
-Tunjukkan kepada anak anda bagaimana melakukannya dengan benar terlebih dahulu
-Ulangilah setidaknya 3 kali
-Fleksibel, role play tidak harus dilakukan dengan waktu tetap
-Buat seperti bermain dan rangsang imajinasi anak dengan beberapa mainan
-Anda harus antusias dalam ekspresi dan perkataan agar anak semakin engage
-Credits</string>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
-                            </view>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Container" translatesAutoresizingMaskIntoConstraints="NO" id="rZv-LH-kFa">
+                                <rect key="frame" x="58" y="42" width="811" height="345"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Label" translatesAutoresizingMaskIntoConstraints="NO" id="cih-jY-CsU">
+                                <rect key="frame" x="90" y="-10" width="219" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bitmap" translatesAutoresizingMaskIntoConstraints="NO" id="Y9j-us-1zK">
+                                <rect key="frame" x="722" y="279" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dB-6w-hJR">
+                                <rect key="frame" x="92" y="88" width="697" height="227"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">PETUNJUK BERMAIN
+
+1. Pilih sesi dan dan pilih stage yang akan dimainkan
+2. Siapkan waktu dan alat alat penunjang role play yang tertera pada halaman stage
+3. Ikuti arahan Rere dan pandu anak dengan memperagakan terlebih dahulu dengan antusias !
+4. Ketuk layar untuk melanjutkan aktivitas
+6. Saat Bermain, tidak ada waktu yang membatasi aktivitas. Ulangi sampai anak terbiasa setidaknya 3 kali
+7. Jika ingin selesai bermain, ketuk tombol “SELESAI”
+8. Uji kemampuan anak dengan melakukan challenge atau mempraktikannya di luar sesi
+
+PETUNJUK CHALLENGE
+1. Pilih sesi dan pilih challenge yang akan dilakukan
+2. Layar akan menampilkan sebuah pertanyaan dan ilustrasi, jawablah pertanyaan tersebut bersama anak
+3. Jika mendapatkan skor kurang dari 3 bintang, silahkan mengulangi permainan roleplaynya hingga anak paham dengan water safety
+
+PERTANYAAN YANG SERING DIAJUKAN
+1. Apa itu role play ?
+	role play adalah permainan ketika seorang anak yang terlibat dalam permainan, berpura 		pura mengambil peran sebagai seseorang dan memerankan sebuah skenario
+
+2. Bagaimana agar orang tua dapat lebih terlibat dalam permainan role play anak ?
+	orang tua dapat ikut berimajinasi dan menunjukkan atau memperagakan kepada anak 			bagaimana cara yang benar terlebih dahulu
+
+3. Kapan sebaiknya melakukan permainan role play ?
+	permainan role play dapat dilakukan kapan saja (fleksibel)
+
+CREDITS</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icl-sW-pd3">
+                                <rect key="frame" x="807" y="48" width="53" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Bitmap 2"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XsT-hc-Wlh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.94509803921568625" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afD-Fv-ri8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="686" y="66"/>
+            <point key="canvasLocation" x="685.5291576673867" y="65.887850467289709"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Bitmap" width="144" height="169"/>
+        <image name="Bitmap 2" width="45" height="45"/>
+        <image name="Bitmap back" width="28" height="42"/>
+        <image name="Button mulaipng" width="335" height="70"/>
+        <image name="Container" width="728" height="307"/>
+        <image name="Container stage view" width="368" height="268"/>
+        <image name="Label" width="241" height="66"/>
+        <image name="Title - pilih sesi" width="722" height="67"/>
+        <image name="Title choose stage" width="722" height="67"/>
+        <image name="Title stage" width="722" height="67"/>
+        <image name="about button" width="44" height="44"/>
+        <image name="bg anak renang" width="315" height="180"/>
+        <image name="button mulai landing" width="193" height="70"/>
+        <image name="detail disable" width="40" height="40"/>
+        <image name="detail enable" width="40" height="40"/>
+        <image name="duck - landing" width="120" height="120"/>
+        <image name="lifebuoy" width="137" height="143"/>
+        <image name="lifebuoy landing" width="210" height="135"/>
+        <image name="lifebuoy mirror" width="142" height="156"/>
+        <image name="lock session" width="173" height="268"/>
+        <image name="lock session 2" width="390" height="45"/>
+        <image name="lock session 3" width="390" height="45"/>
+        <image name="lock session 4" width="390" height="45"/>
+        <image name="logo rere" width="326" height="235"/>
+        <image name="mascot rere" width="168" height="225"/>
+        <image name="sesi 1 button" width="410" height="65"/>
+        <image name="unlock Session" width="193" height="288"/>
+        <image name="unlock challenge" width="192" height="288"/>
+        <image name="water-lily" width="48" height="48"/>
+      
         <image name="arrow.uturn.backward" catalog="system" width="128" height="112"/>
         <image name="arrowtriangle.left.fill" catalog="system" width="128" height="113"/>
         <image name="arrowtriangle.right.fill" catalog="system" width="128" height="113"/>
@@ -379,15 +525,6 @@ Credits</string>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
