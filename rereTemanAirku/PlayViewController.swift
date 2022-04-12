@@ -55,6 +55,7 @@ class PlayViewController: UIViewController {
         
         // Insert prompt
         arrOfPrompt = feeder.feedPromptStage1()
+        
     }
     
     
