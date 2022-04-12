@@ -11,7 +11,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="rereTemanAirku" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
@@ -42,54 +41,28 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="about button"/>
+                                        <connections>
+                                            <segue destination="A5N-Gp-zvV" kind="presentation" id="mnX-b7-10m"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPc-Te-DBJ">
                                         <rect key="frame" x="377" y="319" width="173" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="button mulai landing"/>
+                                        <connections>
+                                            <segue destination="4Do-8N-lY1" kind="presentation" id="8X6-5d-lV1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxN-uJ-5HS">
-                                <rect key="frame" x="818" y="20" width="44" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="questionmark.circle.fill" catalog="system"/>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kQx-nq-NS7">
-                                <rect key="frame" x="-145" y="269" width="355" height="355"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fER-oP-cF9">
-                                <rect key="frame" x="218" y="78" width="168" height="225"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jv3-TI-PWb">
-                                <rect key="frame" x="394" y="68" width="325" height="235"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCD-gI-lbm">
-                                <rect key="frame" x="377" y="343" width="173" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="MULAI"/>
-                                <connections>
-                                    <segue destination="FnQ-hu-S00" kind="show" id="PMs-gE-WE4"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="87w-Ng-h7b">
-                                <rect key="frame" x="767" y="298" width="95" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="29.805615550755942" y="65.887850467289709"/>
         </scene>
@@ -110,6 +83,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Bitmap back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Db4-qG-RlS"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Title - pilih sesi" translatesAutoresizingMaskIntoConstraints="NO" id="Goc-u2-ibE">
                                 <rect key="frame" x="103" y="-24" width="763" height="141"/>
@@ -120,6 +96,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="sesi 1 button"/>
+                                <connections>
+                                    <segue destination="vG2-Ig-6zc" kind="presentation" id="uKF-jW-cMU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqi-IV-jcf">
                                 <rect key="frame" x="277" y="182" width="414" height="59"/>
@@ -193,12 +172,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Bitmap back"/>
+                                <connections>
+                                    <segue destination="4Do-8N-lY1" kind="presentation" id="q3D-fa-HkI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Orl-nq-k8W">
                                 <rect key="frame" x="130" y="105" width="217" height="302"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="unlock Session"/>
+                                <connections>
+                                    <segue destination="FnQ-hu-S00" kind="presentation" id="VRT-nE-gVP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnn-5Z-dZ3">
                                 <rect key="frame" x="356" y="105" width="216" height="302"/>
@@ -242,6 +227,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Bitmap back"/>
+                                <connections>
+                                    <segue destination="vG2-Ig-6zc" kind="presentation" id="gvg-cq-qBm"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Container stage view" translatesAutoresizingMaskIntoConstraints="NO" id="fBV-gk-ZwI">
                                 <rect key="frame" x="110" y="102" width="412" height="284"/>
@@ -251,12 +239,10 @@
                                 <rect key="frame" x="548" y="328" width="318" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-
                                 <buttonConfiguration key="configuration" style="plain" image="Button mulaipng"/>
                                 <connections>
-                                    <segue destination="efP-bM-Uf6" kind="show" id="VdN-Vd-16e"/>
+                                    <segue destination="efP-bM-Uf6" kind="presentation" id="H3l-3o-0gM"/>
                                 </connections>
-
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water-lily" translatesAutoresizingMaskIntoConstraints="NO" id="q0h-lY-amU">
                                 <rect key="frame" x="530" y="255" width="47" height="43"/>
@@ -313,6 +299,9 @@
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.uturn.backward" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="FnQ-hu-S00" kind="presentation" id="x8X-wy-SkY"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWT-TQ-cVt">
                                 <rect key="frame" x="374" y="10" width="178" height="30"/>
@@ -437,7 +426,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dB-6w-hJR">
                                 <rect key="frame" x="92" y="88" width="697" height="227"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">PETUNJUK BERMAIN
+                                <string key="text">PETUNJUK BERMAIN
 
 1. Pilih sesi dan dan pilih stage yang akan dimainkan
 2. Siapkan waktu dan alat alat penunjang role play yang tertera pada halaman stage
@@ -462,7 +451,7 @@ PERTANYAAN YANG SERING DIAJUKAN
 3. Kapan sebaiknya melakukan permainan role play ?
 	permainan role play dapat dilakukan kapan saja (fleksibel)
 
-CREDITS</mutableString>
+CREDITS</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -472,6 +461,9 @@ CREDITS</mutableString>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Bitmap 2"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="5Ye-Mr-B1A"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XsT-hc-Wlh"/>
@@ -483,6 +475,12 @@ CREDITS</mutableString>
             <point key="canvasLocation" x="685.5291576673867" y="65.887850467289709"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="x8X-wy-SkY"/>
+        <segue reference="gvg-cq-qBm"/>
+        <segue reference="q3D-fa-HkI"/>
+        <segue reference="Db4-qG-RlS"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Bitmap" width="144" height="169"/>
         <image name="Bitmap 2" width="45" height="45"/>
@@ -495,6 +493,9 @@ CREDITS</mutableString>
         <image name="Title choose stage" width="722" height="67"/>
         <image name="Title stage" width="722" height="67"/>
         <image name="about button" width="44" height="44"/>
+        <image name="arrow.uturn.backward" catalog="system" width="128" height="112"/>
+        <image name="arrowtriangle.left.fill" catalog="system" width="128" height="113"/>
+        <image name="arrowtriangle.right.fill" catalog="system" width="128" height="113"/>
         <image name="bg anak renang" width="315" height="180"/>
         <image name="button mulai landing" width="193" height="70"/>
         <image name="detail disable" width="40" height="40"/>
@@ -513,13 +514,6 @@ CREDITS</mutableString>
         <image name="unlock Session" width="193" height="288"/>
         <image name="unlock challenge" width="192" height="288"/>
         <image name="water-lily" width="48" height="48"/>
-      
-        <image name="arrow.uturn.backward" catalog="system" width="128" height="112"/>
-        <image name="arrowtriangle.left.fill" catalog="system" width="128" height="113"/>
-        <image name="arrowtriangle.right.fill" catalog="system" width="128" height="113"/>
-        <image name="chevron.left" catalog="system" width="96" height="128"/>
-        <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="xmark.circle" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
