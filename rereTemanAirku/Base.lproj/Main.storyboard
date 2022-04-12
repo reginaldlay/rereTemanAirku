@@ -252,6 +252,24 @@
                                 <rect key="frame" x="107" y="21" width="759" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2B-vp-4bh">
+                                <rect key="frame" x="141" y="115" width="347" height="247"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Mengapung dengan Pelampung !
+
+1. Mengetahui kondisi mengapung dan tidak, serta benda - benda dengan sifat mengapung
+
+2. Mengetahui apa itu pelampung serta cara pakainya
+
+3. Mengetahui pelampung dapat membantu mengapung
+
+4. Mengetahui alat - alat pembantu renang
+
+5. Mengetahui harus selalu menggunakan pelampung di sekitar dan di dalam kolam renang</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VwD-JH-tLQ"/>
                         <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -476,10 +494,11 @@ CREDITS</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="H3l-3o-0gM"/>
         <segue reference="x8X-wy-SkY"/>
         <segue reference="gvg-cq-qBm"/>
         <segue reference="q3D-fa-HkI"/>
-        <segue reference="Db4-qG-RlS"/>
+        <segue reference="5Ye-Mr-B1A"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Bitmap" width="144" height="169"/>
