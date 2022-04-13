@@ -27,6 +27,8 @@ class ChallengeViewController: UIViewController {
     
     // Audio
     var avPlayer = AVAudioPlayer()
+    var avPlayerQuiz = AVAudioPlayer()
+    var promptQuiz: String = "Challenge - Kids"
     
     // Quiz Data
     var arrOfQuiz: [Quiz] = []
@@ -76,6 +78,7 @@ class ChallengeViewController: UIViewController {
         } else {
             if currQuiz <= arrOfQuiz.count-1 {
                 evaluateQuiz()
+                avPlayerQuiz.play()
                 changeQuiz()
                 kidPickA.isHidden = true
                 kidPickB.isHidden = true
@@ -85,6 +88,10 @@ class ChallengeViewController: UIViewController {
     
     @IBAction func pressSelesaiBtn(_ sender: Any) {
         avPlayer.stop()
+        
+        // Make sure the total point here
+        print(pointTrueA)
+        print(pointTrueB)
     }
     
     
@@ -126,6 +133,14 @@ class ChallengeViewController: UIViewController {
         let sound = Bundle.main.path(forResource: "happy", ofType: "m4a")
                 do {
                     avPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+                } catch {
+                    debugPrint(error)
+                }
+        avPlayer.volume = 0.3
+        
+        let soundQuiz = Bundle.main.path(forResource: "Challenge", ofType: "m4a")
+                do {
+                    avPlayerQuiz = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: soundQuiz!))
                 } catch {
                     debugPrint(error)
                 }
