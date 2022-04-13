@@ -563,16 +563,20 @@ CREDITS</string>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6VD-Bi-IyL">
                                 <rect key="frame" x="243" y="140" width="354" height="147"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">- Membutuhkan sedikitnya 3 orang 
-- Anak memakai baju renang 
-- Siapkan kacamata renang 
-- Buat area kotak di lantai yang cukup luas sebagai “kolam renang” dengan selotip biru atau dengan penambahan kain/selimut biru 
-- Tentukan kedalaman “kolam” dengan menambahkan tiang atau kardus dengan penanda tinggi permukaan air yang berbeda, yaitu yang setinggi dada anak, setinggi kepala anak, dan setinggi paha anak 
-- Siapkan pelampung rompi, taruh di sekitar rumah yang dapat dijangkau anak dengan aman 
-- Siapkan pelampung rompi untuk salah satu orang tua 
-- Siapkan salah satu atau beberapa alat bantu renang lain seperti papan seluncur, pelampung tangan, swim noodle, ban donat, dan sebagainya 
-- Baskom berisi air dan beberapa benda yang dapat terapung dan yang tenggelam
-</mutableString>
+                                <mutableString key="text">PERALATAN (opsional)
+ 1. Kacamata renang (opsional)
+ 2. Baju renang anak (pakaikan kepada anak)
+ 3. Pelampung rompi
+ 4. Alat renang lain seperti papan seluncur, pelampung tangan, ban donat, dan sebagainya 
+ 5. Baskom atau wadah berisi air 
+ 6. Benda benda yang memiliki sifat mengapung dan yang tidak memiliki sifat mengapung
+
+TAHAPAN PERSIAPAN
+ 1. Buatkan area kotak di lantai yang cukup luas sebagai “kolam renang”, bisa ditandakan dengan    selotip berwarna atau dengan penambahan kain atau selimut
+
+ 2. Tentukan kedalam “kolam” dengan menambahkan tiang atau gunakan kardus dengan penanda tinggi permukaan air yang berbeda. Setinggi dada anak, kepala anak, dan setinggi paha anak
+
+ 3. Taruh pelampung rompi di sekitar rumah yang dapat dijangkau anak dengan aman</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
