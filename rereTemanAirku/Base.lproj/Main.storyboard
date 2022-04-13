@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_7" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -39,7 +39,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="about button"/>
                                         <connections>
-                                            <segue destination="A5N-Gp-zvV" kind="presentation" modalTransitionStyle="crossDissolve" id="mnX-b7-10m"/>
+                                            <segue destination="A5N-Gp-zvV" kind="presentation" id="mnX-b7-10m"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPc-Te-DBJ">
@@ -85,7 +85,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Bitmap back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Db4-qG-RlS"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="Db4-qG-RlS"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Title - pilih sesi" translatesAutoresizingMaskIntoConstraints="NO" id="Goc-u2-ibE">
@@ -180,7 +180,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Bitmap back"/>
                                 <connections>
-                                    <segue destination="4Do-8N-lY1" kind="presentation" id="q3D-fa-HkI"/>
+                                    <segue destination="4Do-8N-lY1" kind="presentation" modalTransitionStyle="crossDissolve" id="q3D-fa-HkI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Orl-nq-k8W">
@@ -238,7 +238,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Bitmap back"/>
                                 <connections>
-                                    <segue destination="vG2-Ig-6zc" kind="presentation" id="gvg-cq-qBm"/>
+                                    <segue destination="vG2-Ig-6zc" kind="presentation" modalTransitionStyle="crossDissolve" id="gvg-cq-qBm"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Container stage view" translatesAutoresizingMaskIntoConstraints="NO" id="fBV-gk-ZwI">
@@ -382,7 +382,7 @@
                                 <buttonConfiguration key="configuration" style="plain" image="Bitmap back"/>
                                 <connections>
                                     <action selector="pressBackPlayBtn:" destination="efP-bM-Uf6" eventType="touchUpInside" id="oAa-va-cIn"/>
-                                    <segue destination="FnQ-hu-S00" kind="presentation" id="CWe-zA-VUM"/>
+                                    <segue destination="FnQ-hu-S00" kind="presentation" modalTransitionStyle="crossDissolve" id="CWe-zA-VUM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwe-W6-vfM">
@@ -394,7 +394,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcU-MQ-edg">
                                 <rect key="frame" x="225" y="122" width="481" height="186"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">PETUNJUK BERMAIN
+                                <string key="text">PETUNJUK BERMAIN
 
 1. Tekan MULAI untuk memulai, tekan JEDA untuk menghentikan waktu dan prompt
 2. Tekan LANJUT untuk melanjutkan
@@ -404,7 +404,7 @@
 6. Saat bermain, tidak ada waktu yang membatasi aktivitas. Ulangi sampai anak terbiasa setidaknya 3 kali
 7. Jika ingin selesai bermain, ketuk tombol panah di kiri atas “&lt;”
 8. Saat berada pada prompt terakhir, untuk mengakhiri permainan tekan “&lt;“ pada kiri atas
-9. Uji kemampuan anak dengan melakukan kuis atau mempraktikannya dengan mengulang sesi</mutableString>
+9. Uji kemampuan anak dengan melakukan kuis atau mempraktikannya dengan mengulang sesi</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -473,7 +473,7 @@
                                 <connections>
                                     <action selector="pressBackPlayBtn:" destination="efP-bM-Uf6" eventType="touchUpInside" id="geq-jE-9Vn"/>
                                     <action selector="pressBackQuizBtn:" destination="wAK-OP-oAR" eventType="touchUpInside" id="WiV-Y5-KOC"/>
-                                    <segue destination="vG2-Ig-6zc" kind="presentation" id="0so-ze-0hC"/>
+                                    <segue destination="vG2-Ig-6zc" kind="presentation" modalTransitionStyle="crossDissolve" id="0so-ze-0hC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQI-H2-q4u">
@@ -511,7 +511,7 @@
                                 <connections>
                                     <action selector="pressLanjutBtn:" destination="wAK-OP-oAR" eventType="touchUpInside" id="CF6-xd-CMK"/>
                                     <action selector="pressSelesaiBtn:" destination="wAK-OP-oAR" eventType="touchUpInside" id="ONl-nK-prZ"/>
-                                    <segue destination="lHv-MW-ZRH" kind="presentation" id="nsi-q5-ptA"/>
+                                    <segue destination="lHv-MW-ZRH" kind="presentation" identifier="ShowResult2View" id="nsi-q5-ptA"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="youchoose" translatesAutoresizingMaskIntoConstraints="NO" id="svb-qj-V6Z">
@@ -531,7 +531,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5a-LM-Hge">
                                 <rect key="frame" x="223" y="121" width="481" height="186"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">             PETUNJUK BERMAIN
+                                <string key="text">             PETUNJUK BERMAIN
 
 1. Tekan MULAI untuk memulai, tekan JEDA untuk menghentikan waktu dan prompt
 2. Tekan LANJUT untuk melanjutkan
@@ -541,7 +541,7 @@
 6. Saat bermain, tidak ada waktu yang membatasi aktivitas. Ulangi sampai anak terbiasa setidaknya 3 kali
 7. Jika ingin selesai bermain, ketuk tombol panah di kiri atas “&lt;”
 8. Saat berada pada prompt terakhir, untuk mengakhiri permainan tekan “&lt;“ pada kiri atas
-9. Uji kemampuan anak dengan melakukan kuis atau mempraktikannya dengan mengulang sesi</mutableString>
+9. Uji kemampuan anak dengan melakukan kuis atau mempraktikannya dengan mengulang sesi</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -581,13 +581,58 @@
                     <view key="view" contentMode="scaleToFill" id="olH-3Z-JQ9">
                         <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Medal" translatesAutoresizingMaskIntoConstraints="NO" id="084-su-1ye">
+                                <rect key="frame" x="64" y="28" width="88" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d7D-Ec-itL">
+                                <rect key="frame" x="293" y="36" width="341" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="52t-Nf-odz">
+                                <rect key="frame" x="297" y="116" width="332.66666666666663" height="144.66666666666666"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wj2-wL-C9z">
+                                <rect key="frame" x="376" y="275" width="73" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="challenge - retry"/>
+                                <connections>
+                                    <action selector="retryChallengeButton:" destination="lHv-MW-ZRH" eventType="touchUpInside" id="lFT-ie-aMC"/>
+                                    <segue destination="wAK-OP-oAR" kind="presentation" modalTransitionStyle="crossDissolve" id="Pch-St-kJD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNw-bn-0XH">
+                                <rect key="frame" x="479" y="275" width="73" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="challenge - next"/>
+                                <connections>
+                                    <action selector="nextChallengeButton:" destination="lHv-MW-ZRH" eventType="touchUpInside" id="9us-n2-dUx"/>
+                                    <segue destination="vG2-Ig-6zc" kind="presentation" modalTransitionStyle="crossDissolve" id="dSs-OS-vNM"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="38N-WJ-lqK">
+                                <rect key="frame" x="637" y="151" width="256" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="BwB-fx-Oyq"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99215686319999996" green="0.95686274770000002" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="k6m-Pu-ZoI"/>
+                    <connections>
+                        <outlet property="rereResultImage" destination="38N-WJ-lqK" id="U2n-Ks-8O5"/>
+                        <outlet property="starImage" destination="52t-Nf-odz" id="vly-Dj-ECL"/>
+                        <outlet property="titleImage" destination="d7D-Ec-itL" id="yMS-m1-6Mu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iXZ-dI-q1u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="4709"/>
+            <point key="canvasLocation" x="29.805615550755942" y="4708.8785046728972"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="9g9-rW-h8M">
@@ -616,7 +661,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dB-6w-hJR">
                                 <rect key="frame" x="92" y="88" width="697" height="227"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Mari selamatkan anak Indonesia dari tenggelam!
+                                <string key="text">Mari selamatkan anak Indonesia dari tenggelam!
 
 Aplikasi ini membantu orang tua dalam melakukan role play dengan anak yang bertujuan untuk menanamkan konsep water safety kepada anak secara lebih terarah, fleksibel dan praktis. Materi dalam aplikasi ini didasarkan pada sumber-sumber water safety terpercaya seperti American Academy of Pediatrics dan Red Cross. 
 
@@ -653,7 +698,7 @@ Joshia
 Kego
 Regi
 Sim
-Yunie</mutableString>
+Yunie</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -664,7 +709,7 @@ Yunie</mutableString>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Bitmap 2"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" animates="NO" id="5Ye-Mr-B1A"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="5Ye-Mr-B1A"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -695,7 +740,7 @@ Yunie</mutableString>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byx-E3-t2j">
                                 <rect key="frame" x="243" y="140" width="354" height="147"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Sesi ini membutuhkan sedikitnya 3 orang untuk bermain.  
+                                <string key="text">Sesi ini membutuhkan sedikitnya 3 orang untuk bermain.  
 PERALATAN (opsional) 
  1. Kacamata renang (opsional) 
  2. Baju renang anak (pakaikan kepada anak)
@@ -709,7 +754,7 @@ TAHAPAN PERSIAPAN 
 
  2. Tentukan kedalam “kolam” dengan menambahkan tiang atau gunakan kardus dengan penanda tinggi permukaan air yang berbeda. Setinggi dada anak, kepala anak, dan setinggi paha anak
 
- 3. Taruh pelampung rompi di sekitar rumah yang dapat dijangkau anak dengan aman</mutableString>
+ 3. Taruh pelampung rompi di sekitar rumah yang dapat dijangkau anak dengan aman</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -724,7 +769,7 @@ TAHAPAN PERSIAPAN 
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="button ok"/>
                                 <connections>
-                                    <segue destination="4Do-8N-lY1" kind="presentation" animates="NO" id="UUo-Kg-3Jf"/>
+                                    <segue destination="4Do-8N-lY1" kind="presentation" modalTransitionStyle="crossDissolve" id="UUo-Kg-3Jf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -740,10 +785,11 @@ TAHAPAN PERSIAPAN 
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="mYF-Em-TXW"/>
+        <segue reference="Pch-St-kJD"/>
         <segue reference="CWe-zA-VUM"/>
-        <segue reference="0so-ze-0hC"/>
-        <segue reference="8X6-5d-lV1"/>
-        <segue reference="Db4-qG-RlS"/>
+        <segue reference="dSs-OS-vNM"/>
+        <segue reference="q3D-fa-HkI"/>
+        <segue reference="5Ye-Mr-B1A"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1-benar" width="384" height="332"/>
@@ -755,6 +801,7 @@ TAHAPAN PERSIAPAN 
         <image name="Container" width="728" height="307"/>
         <image name="Container stage view" width="368" height="268"/>
         <image name="Label" width="241" height="66"/>
+        <image name="Medal" width="88" height="88"/>
         <image name="Mini-Label Copy" width="148" height="62"/>
         <image name="Play Text Box" width="500" height="200"/>
         <image name="Title - pilih sesi" width="722" height="67"/>
@@ -767,6 +814,8 @@ TAHAPAN PERSIAPAN 
         <image name="button mulai landing" width="193" height="70"/>
         <image name="button ok" width="129" height="65"/>
         <image name="button selesai" width="193" height="70"/>
+        <image name="challenge - next" width="67" height="67"/>
+        <image name="challenge - retry" width="67" height="67"/>
         <image name="challenge atau" width="127" height="41"/>
         <image name="challenge question" width="638" height="45"/>
         <image name="container - detail" width="508" height="203"/>
