@@ -27,6 +27,8 @@ class ChallengeViewController: UIViewController {
     
     // Audio
     var avPlayer = AVAudioPlayer()
+    var avPlayerQuiz = AVAudioPlayer()
+    var promptQuiz: String = "Challenge - Kids"
     
     // Quiz Data
     var arrOfQuiz: [Quiz] = []
@@ -70,6 +72,7 @@ class ChallengeViewController: UIViewController {
             toggleQuizOn()
             prepareAudioQuiz()
             avPlayer.play()
+            avPlayerQuiz.play()
             startBtn.isEnabled = false
             quizInstructionText.isHidden = true
             quizInstructionBox.isHidden = true
@@ -97,7 +100,6 @@ class ChallengeViewController: UIViewController {
             
             challengeResultView.totalAnswer = pointTrueA + pointTrueB
         }
-        
     }
     
     
@@ -139,6 +141,14 @@ class ChallengeViewController: UIViewController {
         let sound = Bundle.main.path(forResource: "happy", ofType: "m4a")
                 do {
                     avPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+                } catch {
+                    debugPrint(error)
+                }
+        avPlayer.volume = 0.3
+        
+        let soundQuiz = Bundle.main.path(forResource: "Challenge", ofType: "m4a")
+                do {
+                    avPlayerQuiz = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: soundQuiz!))
                 } catch {
                     debugPrint(error)
                 }

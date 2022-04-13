@@ -24,6 +24,7 @@ class PlayViewController: UIViewController {
         @IBOutlet weak var promptTextBG: UIButton!
         @IBOutlet weak var promptAvatar: UIImageView!
         @IBOutlet weak var promptImage: UIImageView!
+        @IBOutlet weak var promptImageRereGIF: UIImageView!
         @IBOutlet weak var nextPromptBtn: UIButton!
         @IBOutlet weak var prevPromptBtn: UIButton!
         @IBOutlet weak var promptAudio: UILabel!
@@ -61,6 +62,7 @@ class PlayViewController: UIViewController {
         playInstructionText.isHidden = false
         playInstructionBG.isHidden = false
         rerePlayInstruction.isHidden = false
+        promptImageRereGIF.isHidden = false
         
         // Insert prompt
         arrOfPrompt = feeder.feedPromptStage1()
@@ -186,6 +188,23 @@ class PlayViewController: UIViewController {
                 promptText.font = UIFont.boldSystemFont(ofSize: 20.0)
             } else {
                 promptText.font = UIFont.systemFont(ofSize: 18.0)
+            }
+            
+            switch currPrompt {
+                
+            case 0:
+                let rereWaveGIF = UIImage.gifImageWithName("gif-wave-playpage")
+                promptImageRereGIF.image = rereWaveGIF
+                promptImageRereGIF.isHidden = false
+                
+            case 3:
+                promptImageRereGIF.isHidden = true
+                
+            case 38:
+                promptImageRereGIF.isHidden = false
+                
+            default:
+                backgroundAudio.isHidden = true
             }
         }
     
