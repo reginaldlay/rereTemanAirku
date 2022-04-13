@@ -191,7 +191,10 @@ class PlayViewController: UIViewController {
             }
             
             switch currPrompt {
+                
             case 0:
+                let rereWaveGIF = UIImage.gifImageWithName("gif-wave-playpage")
+                promptImageRereGIF.image = rereWaveGIF
                 promptImageRereGIF.isHidden = false
                 
             case 3:

@@ -72,6 +72,7 @@ class ChallengeViewController: UIViewController {
             toggleQuizOn()
             prepareAudioQuiz()
             avPlayer.play()
+            avPlayerQuiz.play()
             startBtn.isEnabled = false
             quizInstructionText.isHidden = true
             quizInstructionBox.isHidden = true
@@ -79,7 +80,6 @@ class ChallengeViewController: UIViewController {
         } else {
             if currQuiz <= arrOfQuiz.count-1 {
                 evaluateQuiz()
-                avPlayerQuiz.play()
                 changeQuiz()
                 kidPickA.isHidden = true
                 kidPickB.isHidden = true
