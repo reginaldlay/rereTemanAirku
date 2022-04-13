@@ -21,12 +21,17 @@ class PlayViewController: UIViewController {
     
         // Prompt
         @IBOutlet weak var promptText: UITextView!
+        @IBOutlet weak var promptTextBG: UIButton!
         @IBOutlet weak var promptAvatar: UIImageView!
         @IBOutlet weak var promptImage: UIImageView!
         @IBOutlet weak var nextPromptBtn: UIButton!
         @IBOutlet weak var prevPromptBtn: UIButton!
         @IBOutlet weak var promptAudio: UILabel!
         @IBOutlet weak var backgroundAudio: UILabel!
+        @IBOutlet weak var playBackBtn: UIButton!
+        @IBOutlet weak var playInstructionText: UITextView!
+        @IBOutlet weak var playInstructionBG: UIButton!
+        @IBOutlet weak var rerePlayInstruction: UIImageView!
     
     // Prompt Data
     var arrOfPrompt: [Prompt] = []
@@ -44,14 +49,18 @@ class PlayViewController: UIViewController {
         super.viewDidLoad()
         
         // Set initial display of Play Page
-        pauseBtn.setTitle("MULAI", for: .normal)
+        pauseBtn.setImage(UIImage(named: "play stage - button mulai"), for: .normal)
         timerText.text = "00:00"
         promptText.isHidden = true
+        promptTextBG.isHidden = true
         promptAvatar.isHidden = true
-        nextPromptBtn.isEnabled = false
-        prevPromptBtn.isEnabled = false
+        nextPromptBtn.isHidden = true
+        prevPromptBtn.isHidden = true
         promptAudio.isHidden = true
         backgroundAudio.isHidden = true
+        playInstructionText.isHidden = false
+        playInstructionBG.isHidden = false
+        rerePlayInstruction.isHidden = false
         
         // Insert prompt
         arrOfPrompt = feeder.feedPromptStage1()
@@ -70,7 +79,13 @@ class PlayViewController: UIViewController {
         @IBAction func pressStart(_ sender: Any) {
             if playRunning == false && timerText.text == "00:00" {
                promptText.isHidden = false
+               promptTextBG.isHidden = false
                promptAvatar.isHidden = false
+               playInstructionText.isHidden = true
+               playInstructionBG.isHidden = true
+               rerePlayInstruction.isHidden = true
+               nextPromptBtn.isHidden = false
+               prevPromptBtn.isHidden = false
                changePrompt()
                changePlayState()
                avPlayerPrompt.play()
@@ -83,7 +98,7 @@ class PlayViewController: UIViewController {
                 } else {
                     timer.invalidate()
                     playRunning = false
-                    pauseBtn.setTitle("LANJUT", for: .normal)
+                    pauseBtn.setImage(UIImage(named: "play stage - button lanjut"), for: .normal)
                     nextPromptBtn.isEnabled = false
                     prevPromptBtn.isEnabled = false
                     avPlayerPrompt.stop()
@@ -116,7 +131,11 @@ class PlayViewController: UIViewController {
                     avPlayerPrompt.play()
         }
     
-        
+        @IBAction func pressBackPlayBtn(_ sender: Any) {
+            avPlayerBG.stop()
+            avPlayerPrompt.stop()
+        }
+    
     
     // Functions
     
@@ -131,7 +150,7 @@ class PlayViewController: UIViewController {
         func changePlayState() {
             timer = Timer.scheduledTimer(timeInterval: 1.0, target:self, selector: #selector(PlayViewController.update), userInfo: nil, repeats: true)
             playRunning = true
-            pauseBtn.setTitle("JEDA", for: .normal)
+            pauseBtn.setImage(UIImage(named: "play stage - button jeda"), for: .normal)
         }
         
         // Set Prompt Navigation Visibility
@@ -140,27 +159,29 @@ class PlayViewController: UIViewController {
             case 0:
                 nextPromptBtn.isEnabled = true
                 prevPromptBtn.isEnabled = false
+                pauseBtn.isHidden = false
 
             case arrOfPrompt.count-1:
                 nextPromptBtn.isEnabled = false
                 prevPromptBtn.isEnabled = true
-
+                pauseBtn.isHidden = true
+            
             default:
                 nextPromptBtn.isEnabled = true
                 prevPromptBtn.isEnabled = true
+                pauseBtn.isHidden = false
             }
         }
         
         // Change Prompt
         func changePrompt() {
-                promptImage.image = arrOfPrompt[currPrompt].promptImage
-                promptAvatar.image = arrOfPrompt[currPrompt].rereAvatar
-                promptAudio.text = arrOfPrompt[currPrompt].promptAudio
-                backgroundAudio.text = arrOfPrompt[currPrompt].backgroundAudio
+                changePromptImage()
+                changePromptAvatar()
                 promptText.text = arrOfPrompt[currPrompt].promptText
                 navigateViewPrompt()
                 changePromptAudio()
                 changePlayBGAudio()
+            
             if arrOfPrompt[currPrompt].isActivity {
                 promptText.font = UIFont.boldSystemFont(ofSize: 20.0)
             } else {
@@ -168,6 +189,20 @@ class PlayViewController: UIViewController {
             }
         }
     
+        // Change Prompt Image every prev and next if the next one is different
+        func changePromptImage() {
+            if promptImage.image != arrOfPrompt[currPrompt].promptImage {
+                promptImage.image = arrOfPrompt[currPrompt].promptImage
+            }
+        }
+    
+        // Change Rere Avatar every prev and next if the next one is different
+        func changePromptAvatar() {
+            if promptAvatar.image != arrOfPrompt[currPrompt].rereAvatar {
+                promptAvatar.image = arrOfPrompt[currPrompt].rereAvatar
+            }
+        }
+        
         // Change Prompt Audio every prev and next
         func changePromptAudio() {
             let sound = Bundle.main.path(forResource: arrOfPrompt[currPrompt].promptAudio, ofType: "m4a")
@@ -183,7 +218,7 @@ class PlayViewController: UIViewController {
                         
             if BG != arrOfPrompt[currPrompt].backgroundAudio {
                 BG = arrOfPrompt[currPrompt].backgroundAudio
-                let soundBG = Bundle.main.path(forResource: BG, ofType: "mp3")
+                let soundBG = Bundle.main.path(forResource: BG, ofType: "m4a")
                         do {
                             avPlayerBG = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: soundBG!))
                         } catch {
@@ -198,10 +233,10 @@ class PlayViewController: UIViewController {
     
         // Background Audio Volume Splitter
         func volumeBG() {
-            if BG == "ceria" {
-                avPlayerBG.volume = 0.1
+            if BG == "ceria" || BG == "happy" {
+                avPlayerBG.volume = 0.2
             } else {
-                avPlayerBG.volume = 0.3
+                avPlayerBG.volume = 0.8
             }
         }
     

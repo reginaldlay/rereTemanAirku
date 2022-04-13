@@ -21,19 +21,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo rere" translatesAutoresizingMaskIntoConstraints="NO" id="sqs-w9-UaH">
-                                        <rect key="frame" x="375" y="60" width="325.33333333333331" height="235"/>
+                                        <rect key="frame" x="242" y="60" width="325.33333333333331" height="235"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mascot rere" translatesAutoresizingMaskIntoConstraints="NO" id="mZn-3G-WU4">
-                                        <rect key="frame" x="223" y="70" width="167.33333333333331" height="225"/>
+                                        <rect key="frame" x="569" y="93" width="168" height="225"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lifebuoy landing" translatesAutoresizingMaskIntoConstraints="NO" id="EFm-KW-2iW">
                                         <rect key="frame" x="-52" y="298" width="318" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="duck - landing" translatesAutoresizingMaskIntoConstraints="NO" id="gfh-ET-k0k">
-                                        <rect key="frame" x="724" y="250" width="119.66666666666666" height="119.33333333333333"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSy-wT-klx">
@@ -42,7 +39,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="about button"/>
                                         <connections>
-                                            <segue destination="A5N-Gp-zvV" kind="presentation" id="mnX-b7-10m"/>
+                                            <segue destination="A5N-Gp-zvV" kind="presentation" modalTransitionStyle="crossDissolve" id="mnX-b7-10m"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPc-Te-DBJ">
@@ -54,6 +51,10 @@
                                             <segue destination="4Do-8N-lY1" kind="presentation" id="8X6-5d-lV1"/>
                                         </connections>
                                     </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="duck - landing" translatesAutoresizingMaskIntoConstraints="NO" id="gfh-ET-k0k">
+                                        <rect key="frame" x="639" y="223" width="119.66666666666666" height="119.33333333333333"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -123,6 +124,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="detail enable"/>
+                                <connections>
+                                    <segue destination="JHy-bG-D8q" kind="presentation" id="mYF-Em-TXW">
+                                        <segue key="commit" inheritsFrom="parent" id="nDm-V9-vEu"/>
+                                        <segue key="preview" inheritsFrom="commit" id="o8E-iL-FOH"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKt-nH-ID1">
                                 <rect key="frame" x="692" y="189" width="44" height="44"/>
@@ -180,7 +187,7 @@
                                 <rect key="frame" x="130" y="105" width="217" height="302"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="unlock Session"/>
+                                <buttonConfiguration key="configuration" style="plain" image="unlock Session" title=""/>
                                 <connections>
                                     <segue destination="FnQ-hu-S00" kind="presentation" id="VRT-nE-gVP"/>
                                 </connections>
@@ -190,6 +197,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="unlock challenge"/>
+                                <connections>
+                                    <segue destination="wAK-OP-oAR" kind="presentation" id="1g5-NE-dTc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsE-PB-YPe">
                                 <rect key="frame" x="591" y="115" width="197" height="282"/>
@@ -214,8 +224,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg anak renang" translatesAutoresizingMaskIntoConstraints="NO" id="8fy-4D-RLL">
-                                <rect key="frame" x="548" y="102" width="307" height="174"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rere-pool-pelampung" translatesAutoresizingMaskIntoConstraints="NO" id="8fy-4D-RLL">
+                                <rect key="frame" x="434" y="63" width="570" height="366"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lifebuoy mirror" translatesAutoresizingMaskIntoConstraints="NO" id="eEa-ge-dN2">
@@ -244,32 +254,32 @@
                                     <segue destination="efP-bM-Uf6" kind="presentation" id="H3l-3o-0gM"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water-lily" translatesAutoresizingMaskIntoConstraints="NO" id="q0h-lY-amU">
-                                <rect key="frame" x="530" y="255" width="47" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Title stage" translatesAutoresizingMaskIntoConstraints="NO" id="0r8-wG-FJT">
                                 <rect key="frame" x="107" y="21" width="759" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2B-vp-4bh">
-                                <rect key="frame" x="141" y="115" width="347" height="247"/>
+                                <rect key="frame" x="141" y="113" width="347" height="261"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Mengapung dengan Pelampung !
+                                <string key="text">MENGAPUNG DENGAN PELAMPUNG~!
 
-1. Mengetahui kondisi mengapung dan tidak, serta benda - benda dengan sifat mengapung
+1. Anak mengetahui kondisi mengapung dan tidak, serta benda - benda dengan sifat mengapung
 
-2. Mengetahui apa itu pelampung serta cara pakainya
+2. Anak mengetahui apa itu pelampung serta cara pakainya
 
-3. Mengetahui pelampung dapat membantu mengapung
+3. Anak mengetahui pelampung dapat membantu mengapung
 
-4. Mengetahui alat - alat pembantu renang
+4. Anak mengetahui alat - alat pembantu renang
 
-5. Mengetahui harus selalu menggunakan pelampung di sekitar dan di dalam kolam renang</string>
+5. Anak mengetahui harus selalu menggunakan pelampung di sekitar dan di dalam kolam renang</string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water-lily" translatesAutoresizingMaskIntoConstraints="NO" id="q0h-lY-amU">
+                                <rect key="frame" x="696" y="131" width="47" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VwD-JH-tLQ"/>
                         <color key="backgroundColor" red="1" green="0.94509803920000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -288,7 +298,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFC-Ii-RtK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFC-Ii-RtK">
                                 <rect key="frame" x="78" y="48" width="770" height="332"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -296,7 +306,9 @@
                                 <rect key="frame" x="36" y="192" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrowtriangle.left.fill" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowtriangle.left.fill" catalog="system">
+                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="pressPrevPromptBtn:" destination="efP-bM-Uf6" eventType="touchUpInside" id="uSa-01-9cx"/>
                                 </connections>
@@ -305,51 +317,48 @@
                                 <rect key="frame" x="846" y="198" width="43" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrowtriangle.right.fill" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowtriangle.right.fill" catalog="system">
+                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="pressNextPromptBtn:" destination="efP-bM-Uf6" eventType="touchUpInside" id="OZr-jV-9F8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHi-YP-anq">
-                                <rect key="frame" x="72" y="3" width="44" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrow.uturn.backward" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="FnQ-hu-S00" kind="presentation" id="x8X-wy-SkY"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWT-TQ-cVt">
-                                <rect key="frame" x="374" y="10" width="178" height="30"/>
+                                <rect key="frame" x="374" y="9" width="178" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmt-Ro-eZc">
-                                <rect key="frame" x="754" y="9" width="94" height="31"/>
+                                <rect key="frame" x="355" y="343" width="217" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="PAUSE">
+                                <buttonConfiguration key="configuration" style="plain" image="play stage - button mulai" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="0.0"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="pressStart:" destination="efP-bM-Uf6" eventType="touchUpInside" id="1x5-U1-hop"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAW-HB-Zv3">
-                                <rect key="frame" x="178" y="56" width="662" height="83"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7F-KW-0RL">
+                                <rect key="frame" x="174" y="35" width="705" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.81925739045618251" green="1" blue="0.99247699079631846" alpha="0.73758278145695366" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="playpromptbox"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAW-HB-Zv3">
+                                <rect key="frame" x="210" y="51" width="627" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ov1-kY-RlP">
-                                <rect key="frame" x="87" y="56" width="86" height="83"/>
+                                <rect key="frame" x="112" y="48" width="83" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="audio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VS-7T-Y9V">
@@ -366,6 +375,44 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHb-ql-RdW">
+                                <rect key="frame" x="60" y="33" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Bitmap back"/>
+                                <connections>
+                                    <action selector="pressBackPlayBtn:" destination="efP-bM-Uf6" eventType="touchUpInside" id="oAa-va-cIn"/>
+                                    <segue destination="FnQ-hu-S00" kind="presentation" id="CWe-zA-VUM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwe-W6-vfM">
+                                <rect key="frame" x="201" y="112" width="524" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Play Text Box"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcU-MQ-edg">
+                                <rect key="frame" x="225" y="122" width="481" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">PETUNJUK BERMAIN
+
+1. Tekan MULAI untuk memulai, tekan JEDA untuk menghentikan waktu dan prompt
+2. Tekan LANJUT untuk melanjutkan
+3. Ikuti arahan Rere dan pandu anak dengan memperagakan terlebih dahulu dengan antusias!
+4. Prompt aktivitas role play akan diberi cetak TEBAL
+5. Tekan tombol “&gt;” untuk melanjutkan prompt atau “&lt;“ untuk kembali ke prompt sebelumnya. Tombol-tombol ini berada di sisi kiri dan kanan ilustrasi
+6. Saat bermain, tidak ada waktu yang membatasi aktivitas. Ulangi sampai anak terbiasa setidaknya 3 kali
+7. Jika ingin selesai bermain, ketuk tombol panah di kiri atas “&lt;”
+8. Saat berada pada prompt terakhir, untuk mengakhiri permainan tekan “&lt;“ pada kiri atas
+9. Uji kemampuan anak dengan melakukan kuis atau mempraktikannya dengan mengulang sesi</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mascot rere" translatesAutoresizingMaskIntoConstraints="NO" id="axV-5K-tEg">
+                                <rect key="frame" x="602" y="208" width="277" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CZt-fn-WdA"/>
                         <color key="backgroundColor" red="1" green="0.94509803921568625" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
@@ -375,11 +422,16 @@
                         <outlet property="backgroundAudio" destination="Gki-zz-Id3" id="Bnr-y1-csY"/>
                         <outlet property="nextPromptBtn" destination="DpR-5Z-dKZ" id="sfe-Xe-VO7"/>
                         <outlet property="pauseBtn" destination="Zmt-Ro-eZc" id="Veo-po-f9Z"/>
+                        <outlet property="playBackBtn" destination="MHb-ql-RdW" id="0PF-3Z-hnP"/>
+                        <outlet property="playInstructionBG" destination="jwe-W6-vfM" id="ICV-Il-CGA"/>
+                        <outlet property="playInstructionText" destination="fcU-MQ-edg" id="nWx-SH-UkT"/>
                         <outlet property="prevPromptBtn" destination="xcy-9P-Hva" id="gf7-Aq-Avm"/>
                         <outlet property="promptAudio" destination="5VS-7T-Y9V" id="Yp3-Lm-lfr"/>
                         <outlet property="promptAvatar" destination="ov1-kY-RlP" id="MeW-Qr-rLl"/>
                         <outlet property="promptImage" destination="UFC-Ii-RtK" id="PeU-MG-Lv9"/>
                         <outlet property="promptText" destination="XAW-HB-Zv3" id="MLQ-7d-xyM"/>
+                        <outlet property="promptTextBG" destination="f7F-KW-0RL" id="V1J-BG-5aQ"/>
+                        <outlet property="rerePlayInstruction" destination="axV-5K-tEg" id="6Gh-By-ddh"/>
                         <outlet property="timerText" destination="rWT-TQ-cVt" id="Qu7-8U-xNF"/>
                     </connections>
                 </viewController>
@@ -394,13 +446,133 @@
                     <view key="view" contentMode="scaleToFill" id="8d0-jT-xjj">
                         <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfl-wb-OYN">
+                                <rect key="frame" x="499" y="62" width="321" height="303"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="1-salah"/>
+                                <connections>
+                                    <action selector="pressImageB:" destination="wAK-OP-oAR" eventType="touchUpInside" id="a9c-f4-TmL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abQ-pk-8sj">
+                                <rect key="frame" x="64" y="41" width="408" height="346"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="1-benar"/>
+                                <connections>
+                                    <action selector="pressImageA:" destination="wAK-OP-oAR" eventType="touchUpInside" id="zqW-QJ-FkQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpZ-nW-ifx">
+                                <rect key="frame" x="60" y="33" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Bitmap back"/>
+                                <connections>
+                                    <action selector="pressBackPlayBtn:" destination="efP-bM-Uf6" eventType="touchUpInside" id="geq-jE-9Vn"/>
+                                    <action selector="pressBackQuizBtn:" destination="wAK-OP-oAR" eventType="touchUpInside" id="WiV-Y5-KOC"/>
+                                    <segue destination="vG2-Ig-6zc" kind="presentation" id="0so-ze-0hC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQI-H2-q4u">
+                                <rect key="frame" x="47" y="335" width="339" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="label tantangan 1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEC-Or-uPA">
+                                <rect key="frame" x="388" y="178" width="151" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="challenge atau"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcB-ol-qOo">
+                                <rect key="frame" x="132" y="20" width="662" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="challenge question"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypV-5N-BjH">
+                                <rect key="frame" x="614" y="344" width="217" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="button lanjut"/>
+                                <connections>
+                                    <action selector="pressLanjutBtn:" destination="wAK-OP-oAR" eventType="touchUpInside" id="WgY-vR-Cjt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oih-XI-KWs">
+                                <rect key="frame" x="614" y="344" width="217" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="button selesai"/>
+                                <connections>
+                                    <action selector="pressLanjutBtn:" destination="wAK-OP-oAR" eventType="touchUpInside" id="CF6-xd-CMK"/>
+                                    <action selector="pressSelesaiBtn:" destination="wAK-OP-oAR" eventType="touchUpInside" id="ONl-nK-prZ"/>
+                                    <segue destination="lHv-MW-ZRH" kind="presentation" id="nsi-q5-ptA"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="youchoose" translatesAutoresizingMaskIntoConstraints="NO" id="svb-qj-V6Z">
+                                <rect key="frame" x="36" y="95" width="157" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="youchoose" translatesAutoresizingMaskIntoConstraints="NO" id="X7r-X3-6gA">
+                                <rect key="frame" x="732" y="95" width="157" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fo1-V9-cLn">
+                                <rect key="frame" x="201" y="107" width="524" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Play Text Box"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5a-LM-Hge">
+                                <rect key="frame" x="223" y="121" width="481" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">             PETUNJUK BERMAIN
+
+1. Tekan MULAI untuk memulai, tekan JEDA untuk menghentikan waktu dan prompt
+2. Tekan LANJUT untuk melanjutkan
+3. Ikuti arahan Rere dan pandu anak dengan memperagakan terlebih dahulu dengan antusias!
+4. Prompt aktivitas role play akan diberi cetak TEBAL
+5. Tekan tombol “&gt;” untuk melanjutkan prompt atau “&lt;“ untuk kembali ke prompt sebelumnya. Tombol-tombol ini berada di sisi kiri dan kanan ilustrasi
+6. Saat bermain, tidak ada waktu yang membatasi aktivitas. Ulangi sampai anak terbiasa setidaknya 3 kali
+7. Jika ingin selesai bermain, ketuk tombol panah di kiri atas “&lt;”
+8. Saat berada pada prompt terakhir, untuk mengakhiri permainan tekan “&lt;“ pada kiri atas
+9. Uji kemampuan anak dengan melakukan kuis atau mempraktikannya dengan mengulang sesi</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="duck - landing" translatesAutoresizingMaskIntoConstraints="NO" id="tb0-uT-NId">
+                                <rect key="frame" x="184" y="75" width="82" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Bir-ML-9bK"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.94509803921568625" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="atauBtn" destination="EEC-Or-uPA" id="nZy-n3-nFL"/>
+                        <outlet property="backQuizBtn" destination="lpZ-nW-ifx" id="sKw-xy-Stq"/>
+                        <outlet property="challengeBanner" destination="JQI-H2-q4u" id="5ZH-PG-ON6"/>
+                        <outlet property="duckQuizImage" destination="tb0-uT-NId" id="0zH-mi-R1J"/>
+                        <outlet property="imageA" destination="abQ-pk-8sj" id="W2U-AQ-etg"/>
+                        <outlet property="imageB" destination="nfl-wb-OYN" id="pyV-Rj-gc1"/>
+                        <outlet property="kidPickA" destination="svb-qj-V6Z" id="nX5-6u-qzP"/>
+                        <outlet property="kidPickB" destination="X7r-X3-6gA" id="nFS-Xr-6RW"/>
+                        <outlet property="questionBtn" destination="UcB-ol-qOo" id="CMw-Ds-VHW"/>
+                        <outlet property="quizInstructionBox" destination="fo1-V9-cLn" id="tFA-Xx-q74"/>
+                        <outlet property="quizInstructionText" destination="d5a-LM-Hge" id="K9W-6P-Zx1"/>
+                        <outlet property="selesaiBtn" destination="Oih-XI-KWs" id="pfj-y1-qjL"/>
+                        <outlet property="startBtn" destination="ypV-5N-BjH" id="PXu-Ei-lSk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zq5-bB-cJr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="27" y="3911"/>
+            <point key="canvasLocation" x="26.565874730021601" y="3909.8130841121492"/>
         </scene>
         <!--Challenge Result View Controller-->
         <scene sceneID="nu2-Br-Iit">
@@ -444,34 +616,46 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dB-6w-hJR">
                                 <rect key="frame" x="92" y="88" width="697" height="227"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">PETUNJUK BERMAIN
+                                <mutableString key="text">Mari selamatkan anak Indonesia dari tenggelam!
+
+Aplikasi ini membantu orang tua dalam melakukan role play dengan anak yang bertujuan untuk menanamkan konsep water safety kepada anak secara lebih terarah, fleksibel dan praktis. Materi dalam aplikasi ini didasarkan pada sumber-sumber water safety terpercaya seperti American Academy of Pediatrics dan Red Cross. 
+
+
+SEBELUM BERMAIN
 
 1. Pilih sesi dan dan pilih stage yang akan dimainkan
-2. Siapkan waktu dan alat alat penunjang role play yang tertera pada halaman stage
-3. Ikuti arahan Rere dan pandu anak dengan memperagakan terlebih dahulu dengan antusias !
-4. Ketuk layar untuk melanjutkan aktivitas
-6. Saat Bermain, tidak ada waktu yang membatasi aktivitas. Ulangi sampai anak terbiasa setidaknya 3 kali
-7. Jika ingin selesai bermain, ketuk tombol “SELESAI”
-8. Uji kemampuan anak dengan melakukan challenge atau mempraktikannya di luar sesi
+2. Siapkan waktu dan alat-alat penunjang role play yang tertera pada halaman sesi bagian icon “i”
+3. Lihat aktivitas yang akan di lakukan pada halaman stage
 
-PETUNJUK CHALLENGE
-1. Pilih sesi dan pilih challenge yang akan dilakukan
-2. Layar akan menampilkan sebuah pertanyaan dan ilustrasi, jawablah pertanyaan tersebut bersama anak
-3. Jika mendapatkan skor kurang dari 3 bintang, silahkan mengulangi permainan roleplaynya hingga anak paham dengan water safety
 
 PERTANYAAN YANG SERING DIAJUKAN
+
 1. Apa itu role play ?
-	role play adalah permainan ketika seorang anak yang terlibat dalam permainan, berpura 		pura mengambil peran sebagai seseorang dan memerankan sebuah skenario
+	Role play adalah permainan ketika seorang anak yang terlibat dalam permainan, berpura-pura mengambil peran sebagai seseorang dan memerankan sebuah skenario
 
 2. Bagaimana agar orang tua dapat lebih terlibat dalam permainan role play anak ?
-	orang tua dapat ikut berimajinasi dan menunjukkan atau memperagakan kepada anak 			bagaimana cara yang benar terlebih dahulu
+	Orang tua dapat ikut berimajinasi dan menunjukkan atau memperagakan kepada anak bagaimana cara yang benar terlebih dahulu, mempersiapkan peralatan penunjang, dan bermain dengan antusias, menggunakan imajinasi. Jangan biarkan anak saja yang berperan dan kita mengambil posisi pasif
 
 3. Kapan sebaiknya melakukan permainan role play ?
-	permainan role play dapat dilakukan kapan saja (fleksibel)
+	Permainan role play dapat dilakukan kapan saja (fleksibel)
 
-CREDITS</string>
+
+CREDITS
+Audio - YouTube
+Children's Music — Happy Upbeat Music (Instrumental Music For Kids)
+Happy and Joyful Children – Free Music (No Copyright Music)
+Children Swimming - Relaxing Sound
+
+
+TEAM - 4 - H2O (MC1 - AFTERNOON)
+Elena
+Joshia
+Kego
+Regi
+Sim
+Yunie</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icl-sW-pd3">
@@ -480,7 +664,7 @@ CREDITS</string>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Bitmap 2"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="5Ye-Mr-B1A"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" animates="NO" id="5Ye-Mr-B1A"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -492,15 +676,78 @@ CREDITS</string>
             </objects>
             <point key="canvasLocation" x="685.5291576673867" y="65.887850467289709"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="MTh-pq-6uv">
+            <objects>
+                <viewController id="JHy-bG-D8q" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RbL-GG-nFr">
+                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="container - detail" translatesAutoresizingMaskIntoConstraints="NO" id="WCS-hF-Dlg">
+                                <rect key="frame" x="209" y="113" width="508" height="203"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mini-Label Copy" translatesAutoresizingMaskIntoConstraints="NO" id="l5n-Ha-eiE">
+                                <rect key="frame" x="243" y="92" width="137" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byx-E3-t2j">
+                                <rect key="frame" x="243" y="140" width="354" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Sesi ini membutuhkan sedikitnya 3 orang untuk bermain.  
+PERALATAN (opsional) 
+ 1. Kacamata renang (opsional) 
+ 2. Baju renang anak (pakaikan kepada anak)
+ 3. Pelampung rompi 
+ 4. Alat renang lain seperti papan seluncur, pelampung tangan, ban donat, dan sebagainya  
+ 5. Baskom atau wadah berisi air  
+ 6. Benda benda yang memiliki sifat mengapung dan yang tidak memiliki sifat mengapung
+ 
+TAHAPAN PERSIAPAN 
+ 1. Buatkan area kotak di lantai yang cukup luas sebagai “kolam renang”, bisa ditandakan dengan    selotip berwarna atau dengan penambahan kain atau selimut
+
+ 2. Tentukan kedalam “kolam” dengan menambahkan tiang atau gunakan kardus dengan penanda tinggi permukaan air yang berbeda. Setinggi dada anak, kepala anak, dan setinggi paha anak
+
+ 3. Taruh pelampung rompi di sekitar rumah yang dapat dijangkau anak dengan aman</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vBV-Mw-W3v">
+                                <rect key="frame" x="427" y="207" width="109" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cnn-R9-ixF">
+                                <rect key="frame" x="593" y="257" width="109" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="button ok"/>
+                                <connections>
+                                    <segue destination="4Do-8N-lY1" kind="presentation" animates="NO" id="UUo-Kg-3Jf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ffn-Wk-eda"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KuU-7P-P10"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TGc-Wu-VgA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678" y="820"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="H3l-3o-0gM"/>
-        <segue reference="x8X-wy-SkY"/>
-        <segue reference="gvg-cq-qBm"/>
-        <segue reference="q3D-fa-HkI"/>
-        <segue reference="5Ye-Mr-B1A"/>
+        <segue reference="mYF-Em-TXW"/>
+        <segue reference="CWe-zA-VUM"/>
+        <segue reference="0so-ze-0hC"/>
+        <segue reference="8X6-5d-lV1"/>
+        <segue reference="Db4-qG-RlS"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="1-benar" width="384" height="332"/>
+        <image name="1-salah" width="384" height="332"/>
         <image name="Bitmap" width="144" height="169"/>
         <image name="Bitmap 2" width="45" height="45"/>
         <image name="Bitmap back" width="28" height="42"/>
@@ -508,18 +755,25 @@ CREDITS</string>
         <image name="Container" width="728" height="307"/>
         <image name="Container stage view" width="368" height="268"/>
         <image name="Label" width="241" height="66"/>
+        <image name="Mini-Label Copy" width="148" height="62"/>
+        <image name="Play Text Box" width="500" height="200"/>
         <image name="Title - pilih sesi" width="722" height="67"/>
         <image name="Title choose stage" width="722" height="67"/>
         <image name="Title stage" width="722" height="67"/>
         <image name="about button" width="44" height="44"/>
-        <image name="arrow.uturn.backward" catalog="system" width="128" height="112"/>
         <image name="arrowtriangle.left.fill" catalog="system" width="128" height="113"/>
         <image name="arrowtriangle.right.fill" catalog="system" width="128" height="113"/>
-        <image name="bg anak renang" width="315" height="180"/>
+        <image name="button lanjut" width="193" height="70"/>
         <image name="button mulai landing" width="193" height="70"/>
+        <image name="button ok" width="129" height="65"/>
+        <image name="button selesai" width="193" height="70"/>
+        <image name="challenge atau" width="127" height="41"/>
+        <image name="challenge question" width="638" height="45"/>
+        <image name="container - detail" width="508" height="203"/>
         <image name="detail disable" width="40" height="40"/>
         <image name="detail enable" width="40" height="40"/>
         <image name="duck - landing" width="120" height="120"/>
+        <image name="label tantangan 1" width="315" height="63"/>
         <image name="lifebuoy" width="137" height="143"/>
         <image name="lifebuoy landing" width="210" height="135"/>
         <image name="lifebuoy mirror" width="142" height="156"/>
@@ -529,15 +783,22 @@ CREDITS</string>
         <image name="lock session 4" width="390" height="45"/>
         <image name="logo rere" width="326" height="235"/>
         <image name="mascot rere" width="168" height="225"/>
+        <image name="play stage - button mulai" width="193" height="70"/>
+        <image name="playpromptbox" width="652" height="97"/>
+        <image name="rere-pool-pelampung" width="1883" height="760"/>
         <image name="sesi 1 button" width="410" height="65"/>
         <image name="unlock Session" width="193" height="288"/>
         <image name="unlock challenge" width="192" height="288"/>
         <image name="water-lily" width="48" height="48"/>
+        <image name="youchoose" width="86" height="90"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
