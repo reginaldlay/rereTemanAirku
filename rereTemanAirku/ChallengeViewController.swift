@@ -43,6 +43,7 @@ class ChallengeViewController: UIViewController {
     var quizRunning = false
     var isSubmit: Bool = false
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -89,9 +90,16 @@ class ChallengeViewController: UIViewController {
     @IBAction func pressSelesaiBtn(_ sender: Any) {
         avPlayer.stop()
         
-        // Make sure the total point here
-        print(pointTrueA)
-        print(pointTrueB)
+        self.performSegue(withIdentifier: "ShowResult2View", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        
+        if segue.identifier == "ShowResult2View" {
+            let challengeResultView = segue.destination as! ChallengeResultViewController
+            
+            challengeResultView.totalAnswer = pointTrueA + pointTrueB
+        }
     }
     
     
@@ -168,6 +176,7 @@ class ChallengeViewController: UIViewController {
         }
         currQuiz += 1
     }
+    
     
     
     
