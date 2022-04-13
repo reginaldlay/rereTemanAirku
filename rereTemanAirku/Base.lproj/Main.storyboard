@@ -124,7 +124,10 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="detail enable"/>
                                 <connections>
-                                    <segue destination="vnJ-Sd-bJV" kind="presentation" modalPresentationStyle="overCurrentContext" id="TXT-qh-f04"/>
+                                    <segue destination="vnJ-Sd-bJV" kind="presentation" id="TXT-qh-f04">
+                                        <segue key="commit" inheritsFrom="parent" id="SXK-5J-G63"/>
+                                        <segue key="preview" destination="vnJ-Sd-bJV" id="vOv-VC-rub"/>
+                                    </segue>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKt-nH-ID1">
@@ -417,8 +420,32 @@
                                 <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wrc-Qw-YTU">
-                                        <rect key="frame" x="94" y="36" width="240" height="128"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Medal" translatesAutoresizingMaskIntoConstraints="NO" id="Wrc-Qw-YTU">
+                                        <rect key="frame" x="52" y="33" width="88" height="88"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fhV-X0-doK">
+                                        <rect key="frame" x="293" y="49" width="341" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e9B-7Q-jMt">
+                                        <rect key="frame" x="297" y="142" width="333" height="145"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZV-mp-bk8">
+                                        <rect key="frame" x="372" y="304" width="73" height="73"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="challenge - retry"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8II-1f-zqf">
+                                        <rect key="frame" x="485" y="304" width="73" height="73"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="challenge - next"/>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C4y-q3-VMh">
+                                        <rect key="frame" x="760" y="225" width="114" height="152"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -516,35 +543,43 @@ CREDITS</string>
                         <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6JO-cj-8CM">
-                                <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="container - detail" translatesAutoresizingMaskIntoConstraints="NO" id="Tj4-Oc-b1o">
+                                <rect key="frame" x="209" y="112" width="508" height="203"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="container - detail" translatesAutoresizingMaskIntoConstraints="NO" id="Tj4-Oc-b1o">
-                                        <rect key="frame" x="209" y="113" width="508" height="203"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mini-Label Copy" translatesAutoresizingMaskIntoConstraints="NO" id="YEs-5c-8Yw">
-                                        <rect key="frame" x="244" y="89" width="137" height="51"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Lorem ipsum dolor " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6VD-Bi-IyL">
-                                        <rect key="frame" x="244" y="141" width="440" height="147"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="button ok" translatesAutoresizingMaskIntoConstraints="NO" id="Noz-Bh-kyd">
-                                        <rect key="frame" x="598" y="261" width="119" height="55"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.99215686319999996" green="0.95686274770000002" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mini-Label Copy" translatesAutoresizingMaskIntoConstraints="NO" id="YEs-5c-8Yw">
+                                <rect key="frame" x="243" y="81" width="137" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WR-dn-sXa">
+                                <rect key="frame" x="593" y="257" width="109" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="button ok"/>
+                                <connections>
+                                    <segue destination="4Do-8N-lY1" kind="presentation" animates="NO" id="SoY-dc-UED"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6VD-Bi-IyL">
+                                <rect key="frame" x="243" y="140" width="354" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">- Membutuhkan sedikitnya 3 orang 
+- Anak memakai baju renang 
+- Siapkan kacamata renang 
+- Buat area kotak di lantai yang cukup luas sebagai “kolam renang” dengan selotip biru atau dengan penambahan kain/selimut biru 
+- Tentukan kedalaman “kolam” dengan menambahkan tiang atau kardus dengan penanda tinggi permukaan air yang berbeda, yaitu yang setinggi dada anak, setinggi kepala anak, dan setinggi paha anak 
+- Siapkan pelampung rompi, taruh di sekitar rumah yang dapat dijangkau anak dengan aman 
+- Siapkan pelampung rompi untuk salah satu orang tua 
+- Siapkan salah satu atau beberapa alat bantu renang lain seperti papan seluncur, pelampung tangan, swim noodle, ban donat, dan sebagainya 
+- Baskom berisi air dan beberapa benda yang dapat terapung dan yang tenggelam
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kSa-OY-ZFg"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nIn-iT-5ID" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -553,11 +588,11 @@ CREDITS</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="H3l-3o-0gM"/>
+        <segue reference="TXT-qh-f04"/>
         <segue reference="x8X-wy-SkY"/>
         <segue reference="uKF-jW-cMU"/>
-        <segue reference="q3D-fa-HkI"/>
-        <segue reference="5Ye-Mr-B1A"/>
+        <segue reference="SoY-dc-UED"/>
+        <segue reference="Db4-qG-RlS"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Bitmap" width="144" height="169"/>
@@ -567,6 +602,7 @@ CREDITS</string>
         <image name="Container" width="728" height="307"/>
         <image name="Container stage view" width="368" height="268"/>
         <image name="Label" width="241" height="66"/>
+        <image name="Medal" width="88" height="88"/>
         <image name="Mini-Label Copy" width="148" height="62"/>
         <image name="Title - pilih sesi" width="722" height="67"/>
         <image name="Title choose stage" width="722" height="67"/>
@@ -578,6 +614,8 @@ CREDITS</string>
         <image name="bg anak renang" width="315" height="180"/>
         <image name="button mulai landing" width="193" height="70"/>
         <image name="button ok" width="129" height="65"/>
+        <image name="challenge - next" width="67" height="67"/>
+        <image name="challenge - retry" width="67" height="67"/>
         <image name="container - detail" width="508" height="203"/>
         <image name="detail disable" width="40" height="40"/>
         <image name="detail enable" width="40" height="40"/>
