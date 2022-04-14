@@ -24,6 +24,7 @@ class ChallengeViewController: UIViewController {
     @IBOutlet weak var quizInstructionText: UITextView!
     @IBOutlet weak var quizInstructionBox: UIButton!
     @IBOutlet weak var duckQuizImage: UIImageView!
+    @IBOutlet weak var quizInstructionBanner: UIButton!
     
     // Audio
     var avPlayer = AVAudioPlayer()
@@ -61,6 +62,7 @@ class ChallengeViewController: UIViewController {
         quizInstructionText.isHidden = false
         quizInstructionBox.isHidden = false
         duckQuizImage.isHidden = false
+        quizInstructionBanner.isHidden = false
         
         // Insert quiz
         arrOfQuiz = feederQ.feedQuizStage1()
@@ -77,6 +79,7 @@ class ChallengeViewController: UIViewController {
             quizInstructionText.isHidden = true
             quizInstructionBox.isHidden = true
             duckQuizImage.isHidden = true
+            quizInstructionBanner.isHidden = true
         } else {
             if currQuiz <= arrOfQuiz.count-1 {
                 evaluateQuiz()

@@ -33,6 +33,7 @@ class PlayViewController: UIViewController {
         @IBOutlet weak var playInstructionText: UITextView!
         @IBOutlet weak var playInstructionBG: UIButton!
         @IBOutlet weak var rerePlayInstruction: UIImageView!
+        @IBOutlet weak var playInstructionBanner: UIButton!
     
     // Prompt Data
     var arrOfPrompt: [Prompt] = []
@@ -40,6 +41,7 @@ class PlayViewController: UIViewController {
    
     // Prompt Control
     var currPrompt: Int = 0
+    var isSessionDone: Bool = false
     
     // Audio
     var avPlayerPrompt = AVAudioPlayer()
@@ -63,18 +65,12 @@ class PlayViewController: UIViewController {
         playInstructionBG.isHidden = false
         rerePlayInstruction.isHidden = false
         promptImageRereGIF.isHidden = false
+        playInstructionBanner.isHidden = false
         
         // Insert prompt
         arrOfPrompt = feeder.feedPromptStage1()
     }
     
-    
-    
-    
-    
-    
-    
-
     // Actions
         
         //Play Buttons
@@ -86,6 +82,7 @@ class PlayViewController: UIViewController {
                playInstructionText.isHidden = true
                playInstructionBG.isHidden = true
                rerePlayInstruction.isHidden = true
+               playInstructionBanner.isHidden = true
                nextPromptBtn.isHidden = false
                prevPromptBtn.isHidden = false
                changePrompt()
@@ -136,6 +133,20 @@ class PlayViewController: UIViewController {
         @IBAction func pressBackPlayBtn(_ sender: Any) {
             avPlayerBG.stop()
             avPlayerPrompt.stop()
+            self.performSegue(withIdentifier: "ShowStageFromPlayView", sender: nil)
+        }
+    
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            
+            if segue.identifier == "ShowStageFromPlayView" {
+                let stageViewController = segue.destination as! StageViewController
+                
+                if currPrompt == arrOfPrompt.count-1 {
+                    stageViewController.isSessionDone = true
+                } else {
+                    stageViewController.isSessionDone = false
+                }
+            }
         }
     
     

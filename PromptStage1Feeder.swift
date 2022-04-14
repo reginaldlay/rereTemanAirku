@@ -28,7 +28,7 @@ class PromptStage1Feeder {
                              backgroundAudio: "happy")
         
         let prompt2 = Prompt(rereAvatar: UIImage(named: "rere-normal.jpg"),
-                             promptText: "Pertama2 mari gunakan kacamata renang imajinasimu agar bisa melihat apa yang Rere lihat",
+                             promptText: "Pertama-tama mari gunakan kacamata renang imajinasimu agar bisa melihat apa yang Rere lihat",
                              promptAudio: "1-1-3",
                              isActivity: false,
                              promptImage: UIImage(named: "rere-wave.gif"),
