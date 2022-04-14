@@ -6,11 +6,17 @@
 //
 
 import UIKit
-import AVFoundation
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var exitBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func pressExitBtn(_ sender: Any) {
+        UIApplication.shared.perform(#selector(NSXPCConnection.suspend))
+    }
+    
 }

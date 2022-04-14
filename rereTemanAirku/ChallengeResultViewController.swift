@@ -15,6 +15,7 @@ class ChallengeResultViewController: UIViewController {
     @IBOutlet weak var rereResultImage: UIImageView!
     
     var totalAnswer: Int = 0
+    var isQuizDone: Bool = false
     var avPlayerResult = AVAudioPlayer()
     
     var songName: String = ""
@@ -49,6 +50,8 @@ class ChallengeResultViewController: UIViewController {
             let lompatGIF = UIImage.gifImageWithName("gif-lompat")
             rereResultImage.image = lompatGIF
             
+            isQuizDone = true
+            
             songName = "Challenge Result - Luar Biasa"
         }
         
@@ -68,6 +71,19 @@ class ChallengeResultViewController: UIViewController {
     
     @IBAction func nextChallengeButton(_ sender: Any) {
         avPlayerResult.stop()
+        self.performSegue(withIdentifier: "QuizToChooseStage", sender: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "QuizToChooseStage" {
+            let chooseStageViewController = segue.destination as! ChooseStageViewController
+            
+            if isQuizDone == true {
+                chooseStageViewController.isQuizDone = true
+            } else {
+                chooseStageViewController.isQuizDone = false
+            }
+        }
+    }
 }
